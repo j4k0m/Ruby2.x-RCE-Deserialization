@@ -6,7 +6,7 @@ end
 
 
 stub_specification = Gem::StubSpecification.new
-stub_specification.instance_variable_set(:@loaded_from, "|id 1>&2")
+stub_specification.instance_variable_set(:@loaded_from, "|id 1>&2") # replace id with your cmd.
 
 puts "STEP n"
 stub_specification.name rescue nil
